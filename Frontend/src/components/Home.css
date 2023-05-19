@@ -1,0 +1,61 @@
+.Home__wrapper {
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 30px;
+    float: right;
+    width: 100vw;
+    height: 100vh;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+
+
+}
+.Home__header {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #000000;
+}
+.Home__body{
+    font-size: 16px;
+    margin-top:30px;
+    height:50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.socials__wrapper{
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid #FFB5BE;
+    border-radius: 20px;
+    width: fit-content;
+    padding: 10px 20px;
+    gap: 20px;
+    bottom: 0;
+
+}
+.Flower__svg{
+    position:absolute;
+    width: 300px;
+    float:right;
+    bottom: 0px;
+    right: 30px;
+
+}
+.iris__image{
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    float: right;
+    z-index: 100;
+}
