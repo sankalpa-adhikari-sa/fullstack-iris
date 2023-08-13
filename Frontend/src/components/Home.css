@@ -27,6 +27,18 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    color:black;
+}
+.Sub__heading{
+    margin-bottom: 30px;
+    width: 100%;
+    font-weight: 500;
+}
+.body__content {
+    margin-bottom: 30px;
+    width: 70%;
+    font-size: 16px;
+    font-weight: 500;
 }
 .socials__wrapper{
     position: absolute;
@@ -46,9 +58,9 @@
 .Flower__svg{
     position:absolute;
     width: 300px;
-    float:right;
+    float:left;
     bottom: 0px;
-    right: 30px;
+    left: 800px;
 
 }
 .iris__image{

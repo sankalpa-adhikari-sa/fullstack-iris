@@ -1,0 +1,20 @@
+version: '1.0'
+services:
+  frontend:
+      build: 
+        context: ./frontend
+      ports:
+        - '5173:5173'
+      volumes:
+      - ./frontend:/app/frontend
+      - /app/frontend/node_modules
+  backend:
+      build:
+        context: ./iris_api
+      ports:
+        - '8000:8000'
+      volumes:
+        - ./iris_api:/app/iris_api
+      environment:
+        - SECRET_KEY=django-insecure-y8hkji%5&55n5*^r(xox32nurqh8@*1e7wc9yz=ehl@^#!-@)d
+        - DEBUG=True
