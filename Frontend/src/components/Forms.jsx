@@ -10,7 +10,7 @@ function Forms() {
   });
   const [prediction, setPrediction] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [isModelOpen, setIsModelOpen]= useState(false)
+ 
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -19,11 +19,7 @@ function Forms() {
       [name]: value
     }));
   };
-  const handleModel= (event)=>{
-    event.preventDefault();
-    setIsModelOpen(true)
-    console.log(isModelOpen)
-  }
+  
   const handleSubmit = (event) => {
 
     event.preventDefault();
@@ -74,13 +70,7 @@ function Forms() {
 
       {isLoading ? <p>loading...</p> : null}
       {prediction && <p className='prediction__result'>Prediction: {prediction}</p>}
-      <button className='trial' onClick={handleModel}>clickme</button>
-      {isModelOpen ?
-      <div className='Modal__wrapper'>
-        <span>Hello, this is a modal </span>
-        <div onClick={()=> setIsModelOpen(false)} className='closemodel__btn'>close Model</div>
-      </div>
-       : null}
+      
 
       </div>
 

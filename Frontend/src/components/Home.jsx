@@ -10,9 +10,13 @@ function Home() {
       <div className='Home__header'>Iris Prediction</div>
       <img className='Flower__svg' src={flower} alt="Your SVG" />
       <div className='Home__body'>
-        <span>
+        <div className='Sub__heading'>
         Namaste🙏, Welcome to Iris prediction project.
-        </span>
+        </div>
+        <div className='body__content'>
+        The Iris Prediction Project aims to address this challenge by employing advanced data science techniques to predict the species of iris flowers based on their various attributes. Iris flowers, known for their distinct species—setosa, versicolor, and virginica—present a classic problem in the field of pattern recognition and classification. This project delves into exploring and implementing different machine learning algorithms, leveraging a dataset containing measurements of iris petals and sepals. By delving into this project, we seek to not only deepen our understanding of machine learning methodologies but also contribute to the broader knowledge of predictive modeling in the context of botanical species classification.
+        
+        </div>
         <img className="iris__image" src={image} alt='iris_flower'/>
       </div>
       <div className='socials__wrapper'>
